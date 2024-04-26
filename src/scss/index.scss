@@ -1,6 +1,8 @@
 @import './var';
 @import './mixins';
+@import '../scss/button.scss';
 @import './cdn.scss';
+@import './header.scss';
 
 * {
     box-sizing: border-box;
@@ -15,4 +17,10 @@
     max-width: 1170px;
     padding: 0 15px;
     margin: auto;
+    z-index: 20;
+}
+
+html{
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
 }
