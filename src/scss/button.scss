@@ -1,0 +1,25 @@
+.button{
+    display: flex;
+    width: $_370px;
+    height: $_80px;
+    background-color: $_button_normal;
+    margin: 0 auto;
+    transition: 0.5s;
+    &-header{
+        display: flex;
+        color: $_button_text;
+        text-transform: uppercase;
+        font-size: $_24px;
+        align-self: center;
+        margin: 0 auto;
+        font-weight:bold;
+    }
+    &:hover{
+        background-color: $_button_hover;
+    }
+    &:active{
+        background-color: $_button_active;
+        box-shadow: $_box_shadow_color;
+    }
+}
+
