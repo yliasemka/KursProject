@@ -1,0 +1,80 @@
+.work{
+    &-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    &-item.item1{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_1.jpg');
+        }
+    }
+    &-item.item2{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_2.png');
+        }
+    }
+    &-item.item3{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_3.jpg');
+        }
+    }
+    &-item.item4{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_4.jpg');
+        }
+    }
+    &-item.item5{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_5.jpg');
+        }
+    }
+    &-item.item6{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_6.jpg');
+        }
+    }
+    &-item.item7{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_7.jpg');
+        }
+    }
+    &-item.item8{
+        @include work-item;
+        &::before{
+            background-image: url('../img/work/work_8.jpg');
+        }
+    }
+    &-test{
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transition: 0.5s;
+        z-index: 20;
+    }
+    &-test a{
+        font-size: $_24px;
+        color: $_navigation_normal;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+    &-test::after{
+        content: 'User Interface Design';
+        color:aliceblue;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: $_18px;
+    }
+}

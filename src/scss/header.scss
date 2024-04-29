@@ -19,22 +19,37 @@
         padding: 0 0 120px 0 ;
     }
     &-cap{
-        display: block;
-        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
         margin-bottom: 130px;
-        height: 100px;
         &::after{
             content: '';
             display: block;
             height: 0.5px;
             width: 100%;
+            margin-top: $_30px;
             background-color: #BABBC5;
         }
         &-wrapper{
             display: flex;
             justify-content: space-between;
+            align-items: start;
+            position: relative;
+            align-items: center;
             flex-wrap: wrap;
-            padding-bottom: 35px;
+        }
+    }
+    &-logo{
+        color: #656980;
+        font-size: $_36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        &::after{
+            content: 'BOX';
+            position: absolute;
+            color: #fff;
+            font-weight: 200;
         }
     }
     &-navigation{
@@ -54,14 +69,13 @@
                 }
                 &::after{
                     content: '';
-                    display: block;
                     opacity: 0;
                     position: absolute;
-                    margin-top: 33px;
                     top: 100%;
                     left: -40%;
                     width: 180%;
                     height: 3px;
+                    margin-top: calc($_36px + $_30px - $_13px*2);
                     background-color: $_navigation_normal;
                     transition: 0.5s;
                 }
