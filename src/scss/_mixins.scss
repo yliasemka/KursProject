@@ -1,9 +1,13 @@
 @mixin work-item {
-    width: 25vw; 
+    width: 25%;
     height: 25vw;
     position: relative;
     overflow: hidden;
     border: 1px solid aliceblue;
+    @media (min-width: 320px) and (max-width: 766px){
+        width: 50%;
+        height: 50vw;
+    }
     &::after{
         position: absolute;
         content: '';
