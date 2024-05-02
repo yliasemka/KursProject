@@ -5,6 +5,10 @@
 @import './header.scss';
 @import './feature.scss';
 @import './work.scss';
+@import './team.scss';
+@import './slider.scss';
+@import './download.scss';
+@import './footer.scss';
 
 * {
     box-sizing: border-box;
@@ -18,7 +22,7 @@
     z-index: 20;
     max-width: 1170px;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
     z-index: 20;
 }
 

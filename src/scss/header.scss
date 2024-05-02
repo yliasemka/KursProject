@@ -17,12 +17,17 @@
     }
     &-wrapper{
         padding: 0 0 120px 0 ;
+        margin: 0 -15px;
     }
     &-cap{
         display: flex;
         flex-direction: column;
         padding-top: 20px;
+        margin: 0 15px;
         margin-bottom: 130px;
+        @media (min-width: 480px) and (max-width: 991px){
+            margin-bottom: 70px;
+        }
         &::after{
             content: '';
             display: block;
@@ -30,6 +35,9 @@
             width: 100%;
             margin-top: $_30px;
             background-color: #BABBC5;
+            @media (min-width: 480px) and (max-width: 991px){
+                display: none;
+            }
         }
         &-wrapper{
             display: flex;
@@ -38,6 +46,9 @@
             position: relative;
             align-items: center;
             flex-wrap: wrap;
+            @media (min-width: 480px) and (max-width: 991px){
+                justify-content: center;
+            }
         }
     }
     &-logo{
@@ -50,6 +61,9 @@
             position: absolute;
             color: #fff;
             font-weight: 200;
+        }
+        @media (min-width: 480px) and (max-width: 991px){
+            margin-bottom: 20px;
         }
     }
     &-navigation{
@@ -78,6 +92,9 @@
                     margin-top: calc($_36px + $_30px - $_13px*2);
                     background-color: $_navigation_normal;
                     transition: 0.5s;
+                    @media (min-width: 650px) and (max-width: 991px){
+                        margin-top: 5px;
+                    }
                 }
                 &:hover::after{
                     opacity: 1;
@@ -94,6 +111,9 @@
                 }
             }
         }
+        @media (min-width: 480px) and (max-width: 991px){
+            width: 90%;
+        }
     }
     &-title{
         font-size: $_h1;
@@ -101,11 +121,23 @@
         color: $_navigation_normal;
         text-align: center;
         text-transform: uppercase;
+        @media (min-width: 480px) and (max-width: 1199px) {
+            font-size: $_48px;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
     }
     &-subtitle{
         color: $_navigation_normal;
         text-align: center;
         margin-bottom: 80px;
         font-size: $_24px;
+        @media (min-width: 480px) and (max-width: 1199px) {
+            font-size: $_18px;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 80px;
+        }
     }
 }
