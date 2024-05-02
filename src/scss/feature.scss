@@ -1,11 +1,16 @@
 .feature{
     padding: 116px 0;
+    position: relative;
+    z-index: 30;
     &-wrapper{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 0 -15px;
         @media (min-width: 480px) and (max-width: 991px){
+            justify-content: center;
+        }
+        @media (min-width: 320px) and (max-width: 479px){
             justify-content: center;
         }
     }
@@ -30,8 +35,8 @@
         @media (min-width: 480px) and (max-width: 991px){
             width: 380px;
         }
-        @media (min-width: 320px){
-            width: 310px;
+        @media (min-width: 320px) and (max-width: 479px){
+            width: 90%;
         }
     }
     &-img{

@@ -8,6 +8,9 @@
         @media (min-width: 320px) and (max-width: 479px){
             flex-direction: column;
         }
+        @media (max-width: 320px){
+            flex-direction: column;
+        }
     }
     &-title {
         text-align: center;
@@ -29,27 +32,13 @@
         }
     }
     &-location {
-        margin: 0 15px;
-        width: 25vw;
-        @media (min-width: 320px) and (max-width: 479px){
-            width: 90%;
-            margin-bottom: 40px;
-        }
+        @include footer-items;
     }
     &-socialmedia{
-        margin: 0 15px;
-        width: 25vw;
-        @media (min-width: 320px) and (max-width: 479px){
-            width: 90%;
-            margin-bottom: 40px;
-        }
+        @include footer-items;
     }
     &-activebox{
-        margin: 0 15px;
-        width: 25vw;
-        @media (min-width: 320px) and (max-width: 479px){
-            width: 90%;
-        }
+        @include footer-items;
     }
     &-submain{
         background-color: #2C3154;
@@ -63,6 +52,9 @@
             margin: 0 auto;
             width: 370px;
             @media (min-width: 320px) and (max-width: 479px){
+                width: 90%;
+            }
+            @media (max-width: 320px){
                 width: 90%;
             }
         }

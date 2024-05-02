@@ -8,6 +8,10 @@
         width: 50%;
         height: 50vw;
     }
+    @media (max-width: 320px){
+        width: 50%;
+        height: 50vw;
+    }
     &::after{
         position: absolute;
         content: '';
@@ -41,5 +45,18 @@
     }
     &:hover .work-test{
         opacity: 1;
+    }
+}
+
+@mixin footer-items{
+    margin: 0 15px;
+    width: 25vw;
+    @media (min-width: 320px) and (max-width: 479px){
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 320px) {
+        width: 90%;
+        margin-bottom: 40px;
     }
 }

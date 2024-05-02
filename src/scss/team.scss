@@ -12,6 +12,10 @@
             flex-wrap: wrap;
             justify-content: center;
         }
+        @media (max-width: 320px){
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &-item{
         width: 270px;         
@@ -35,14 +39,27 @@
             margin-bottom: 40px;
         }
        
-        @media (min-width: 320px) and (max-width: 991px){
+        @media (min-width: 480px) and (max-width: 991px){
             margin-bottom: 30px;
             width: 360px;
             &:nth-last-child(-n+2){
                 margin-bottom: 0;
             }
         }
-
+        @media (min-width: 320px) and (max-width: 479px){
+            margin-bottom: 30px;
+            width: 310px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width: 320px){
+            margin-bottom: 30px;
+            width: 90%;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
     }
     &-icon{
         width: 100%;
@@ -50,7 +67,7 @@
         overflow: hidden;
         margin-bottom: 30px;
         @media (min-width: 320px) and (max-width: 991px){
-            height: 360px;
+            height: 310px;
         }
     }
     &-img{
